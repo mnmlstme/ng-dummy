@@ -7,7 +7,7 @@ into the DOM.
 <p dummy>
 ```
 
-By default, strings of "Lorem ipsum" text are added to the element:
+By default, strings of <q>Lorem ipsum</q> text are added to the element:
 
 ```
 <p dummy="">
@@ -16,7 +16,11 @@ By default, strings of "Lorem ipsum" text are added to the element:
 ```
 
 If the original element is not empty, the span containing the dummy text
-is appended to the element..
+is appended to the element.
+
+```
+<p dummy>Dummy text to follow: </p>
+```
 
 The directive may be used as an attribute (as shown above) or as
 an element:
@@ -30,15 +34,15 @@ an element:
 When the directive is used as an attribute, options may be passed through
 the attribute value.
 
-### Text corpus
+### Selecting the Text Corpus
 
 Currently, five different corpuses are available:
 
-* `lorem`: The default, "Lorem ipsum"
-* `pomo`: Postmodern critical writing from [The Postmodernism Generator](http://www.elsewhere.org/pomo/)
+* `lorem`: The default, <q>Lorem ipsum</q>
+* `pomo`: An instance of postmodern critical writing from [The Postmodernism Generator](http://www.elsewhere.org/pomo/)
 * `lingo`: Corporate gibberish, from [Cameron Creative](http://www.cameroncreative.com/filler-text.html)
-* 'disclaimer': A collection of disclaimers, also from [Cameron Creative](http://www.cameroncreative.com/filler-text.html)
-* 'dickens': The opening paragraphs of "A Christmas Carol", from [Project Gutenberg](http://www.gutenberg.org/cache/epub/46/pg46.txt)
+* `disclaimer`: A collection of disclaimers, also from [Cameron Creative](http://www.cameroncreative.com/filler-text.html)
+* `dickens`: The opening paragraphs of <q>A Christmas Carol</q>, from [Project Gutenberg](http://www.gutenberg.org/cache/epub/46/pg46.txt)
 
 To specify the corpus, pass one of the above keywords via the `dummy` attribute:
 
@@ -46,7 +50,7 @@ To specify the corpus, pass one of the above keywords via the `dummy` attribute:
 <p dummy="dickens">
 ```
 
-### How much text
+### Specifying How Much Text
 
 The number of words or sentences used by default depends on the tag of the HTML element.  For example, given
 
@@ -64,7 +68,7 @@ or `s` (for sentences) suffix:
 <p dummy="1s">
 ```
 
-### Selecting a portion of the text
+### Selecting Which Portion of the Text
 
 The starting point in the text is selected using a
 [pseudo-random number generator](https://github.com/davidbau/seedrandom),
@@ -111,7 +115,8 @@ Which generates:
 If you are already using Angular, then just make the module `me.mnmlst.ng-dummy`
 a dependence of your app.
 
-To use the directive stand-alone in a "static" web page, load Angular from a CDN, and then load this script:
+To use the directive stand-alone in a <q>static</q> web page,
+load Angular from a CDN, and then load this script:
 
 ```
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular.min.js"></script>
@@ -126,7 +131,7 @@ Then use the `ng-dummy` module as your Angular app:
 </body>
 ```
 
-The file `test/test.html` is an example of stand-alone usage.
+The file `test/test.html` demonstrates stand-alone usage.
 
 
 
