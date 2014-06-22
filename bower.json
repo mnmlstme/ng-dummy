@@ -1,0 +1,25 @@
+{
+    "name": "ng-dummy",
+    "version": "0.0.1",
+    "homepage": "https://github.com/mnmlstme/ng-dummy",
+    "authors": [
+        "ken@mnmlst.me"
+    ],
+    "description": "Angular directive for inserting dummy (filler) text.",
+    "main": "dist/ng-dummy.js",
+    "keywords": [
+        "angular", "dummy", "filler", "text", "placeholder", "lorem", "ipsum"
+    ],
+    "license": "BSD",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components"
+    ],
+    "dependencies": {
+        "seedrandom": "~2.3"
+    },
+    "exportsOverride": {
+        "seedrandom": { "js": "*.min.js" }
+    }
+}

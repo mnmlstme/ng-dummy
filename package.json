@@ -1,0 +1,11 @@
+{
+  "name": "ng-dummy",
+  "version": "0.0.1",
+  "author": "Ken Kubiak",
+  "description": "Angular directive to insert dummy (filler) text",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-bower-task": "~0.3.4"
+  }
+}

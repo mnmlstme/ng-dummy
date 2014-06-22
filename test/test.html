@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular.min.js"></script>
+        <script src="../dist/ng-dummy.js"></script>
+        <style>
+            body { max-width: 45em; }
+            section + section { margin-top: 2em; }
+            pre { font-weight: bold; }
+            .ng-dummy-text { color: #37b; }
+        </style>
+    </head>
+    <body ng-app="me.mnmlst.ng-dummy">
+        <section>
+            <h1>Dummy paragraphs</h1>
+            <p dummy>
+            <p dummy>Text before.
+            <p>Text before. <dummy></dummy> Text after.</p>
+        </section>
+        <section>
+            <h1>Dummy paragraphs from different corpus</h1>
+            <p dummy="pomo">
+            <p dummy="lingo">
+            <p dummy="dickens">
+            <p dummy="disclaimer">
+        </section>
+        <section>
+            <h1>Dummy text with arguments</h1>
+            <ul>
+                <li dummy="2w lorem">Lorem Ipsum: </li>
+                <li dummy="3w pomo">Postmodern: </li>
+                <li dummy="4w disclaimer">Disclaimer: </li>
+                <li dummy="5w lingo">Corporate Lingo: </li>
+                <li dummy="2s dickens @0">Dickens: </li>
+           </ul>
+        </section>
+        <section>
+            <h1>Defaults based on element</h1>
+            <h1 dummy>H1: </h1>
+            <h2 dummy>H2: </h2>
+            <h3 dummy>H3: </h3>
+            <h4 dummy>H4: </h4>
+            <h5 dummy>H5: </h5>
+            <h6 dummy>H6: </h6>
+            <p dummy>P: </p>
+            <ul>
+                <li dummy>LI: </li>
+            </ul>
+            <dl>
+                <dt dummy>DT: </dt>
+                <dd dummy>DD: </dd>
+            </dl>
+            <blockquote dummy>BLOCKQUOTE: </blockquote>
+            <table>
+                <td dummy>TD: </td>
+                <td dummy>TD: </td>
+                <td dummy>TD: </td>
+            </table>
+            <p>
+                SPAN: <span dummy></span>
+                EM: <em dummy></em>
+                STRONG: <strong dummy></strong>
+                B: <b dummy></b>
+                I: <i dummy></i>
+                Q: <q dummy></q>
+            </p>
+    </body>
+</html>
